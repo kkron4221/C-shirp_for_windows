@@ -1,0 +1,39 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //チェック対象ファイルの要素を取得
+            string path = @"filename";
+            string[] names = Directory.GetFiles(path, "*");
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+                Console.WriteLine(System.IO.File.GetLastWriteTime(name));
+            }
+
+            //エクセルにアクセスし、検査対象のデータを取得
+
+
+            //検査対象のデータと、チェック対象のデータの比較
+            for(){
+                for(){
+
+                }
+            }
+                
+
+            
+            //一致した要素に対応したセルを書き換え
+            
+        }
+    }
+}
